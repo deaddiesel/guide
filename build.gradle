@@ -58,7 +58,23 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+    maven {
+        name = "Modrinth"
+        url = "https://modrinth.com"
+    }
+    maven {
+        name = "Sponge"
+        url = "https://spongepowered.org"
+    }
     mavenCentral()
+    maven {
+        name = "Jared's maven"
+        url = "https://blamejared.com"
+    }
+    maven {
+        name = "Forge maven"
+        url = "https://minecraftforge.net"
+    }
 }
 
 dependencies {
@@ -66,6 +82,9 @@ dependencies {
 
     implementation 'com.vladsch.flexmark:flexmark:0.64.8'
     implementation 'com.vladsch.flexmark:flexmark-util-data:0.64.8'
+
+    compileOnly fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.20.0.130")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.20.0.130")
 }
 
 compileJava {
