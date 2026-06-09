@@ -1,0 +1,7 @@
+{
+  "name": "guide.book.dev_manual",
+  "namespace": "guide",
+  "default_chapter": "introduction",
+  "icon": "guide:textures/item/guide_book.png",
+  "dev_only": true
+}

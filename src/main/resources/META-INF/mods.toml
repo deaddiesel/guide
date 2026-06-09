@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+issueTrackerURL="https://github.com/deaddiesel/guide/issues"
+
+[[mods]]
+modId="guide"
+version="1.0.0"
+displayName="Guide"
+authors="deaddiesel"
+logoFile="guide.png"
+logoBlur=false
+description='''
+    Guide book mod with 3D multiblock structures in Markdown format.
+    '''
+
+[[dependencies.guide]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.20,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.guide]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1]"
+ordering="NONE"
+side="BOTH"

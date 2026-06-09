@@ -1,0 +1,7 @@
+{
+  "name": "testmod.book.example",
+  "namespace": "testmod",
+  "default_chapter": "intro",
+  "icon": "",
+  "dev_only": false
+}
